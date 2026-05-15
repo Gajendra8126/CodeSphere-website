@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Zap } from "lucide-react";
 
@@ -125,6 +126,7 @@ export function HeroSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
+              <Link to="/challenges">
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-14 text-base rounded font-mono group glow-box"
@@ -132,6 +134,7 @@ export function HeroSection() {
                 Start Coding
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </Button>
+              </Link>
               <Button 
                 size="lg" 
                 variant="outline" 
