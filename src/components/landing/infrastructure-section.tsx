@@ -98,8 +98,8 @@ export function InfrastructureSection() {
                   <div
                     key={i}
                     className={`mb-2 ${
-                      line.startsWith("$") ? "text-foreground" :
-                      line.startsWith("Live") ? "text-primary" :
+                      line?.startsWith("$") ? "text-foreground" :
+                      line?.startsWith("Live") ? "text-primary" :
                       "text-muted-foreground"
                     }`}
                   >

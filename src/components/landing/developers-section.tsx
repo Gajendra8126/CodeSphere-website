@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { Github, Twitter, Globe, Star, GitFork, Code2 } from "lucide-react";
 
 const developers = [
@@ -220,13 +221,13 @@ export function DevelopersSection() {
 
         {/* View All */}
         <div className="mt-12 text-center">
-          <a
-            href="#"
+          <Link
+            to="/developers"
             className="inline-flex items-center gap-2 text-sm font-mono text-primary hover:text-primary/80 transition-colors"
           >
             View all developers
             <span className="text-primary/50">{"→"}</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
