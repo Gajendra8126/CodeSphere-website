@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/landing/navigation";
 import { FooterSection } from "./components/landing/footer-section";
+import { FloatingChat } from "./components/floating-chat";
 import { HomePage } from "./pages/home";
 import { DevelopersPage } from "./pages/developers";
 import { DeveloperProfilePage } from "./pages/developer-profile";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/leaderboard" element={<LeaderboardPage />} />
       </Routes>
       <FooterSection />
+      <FloatingChat />
     </main>
   );
 }
